@@ -1,24 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html5>
   <head>
     <title>CSS/HTML Workshop with govirtuo.com</title>
   </head>
-  <body>
-    <div id="car">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <style>
+      .row div{padding: 20px 10px; border: 1px solid;}
+  </style>
+
+  <body style="background-image:url('background2.jpg');background-repeat: no-repeat; background-color: #404040;background-position:  top; " ></body>>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+            <h1 class="display-4 text-center text-white">Car Location Price Simulator</h1>
+              <p class="text-white">
+                Welcome to Virtuo, where you can rent a car online. On this page, you can emulate the expected rent price of any cars
+              </p class>
+          </div>
+      </div>
+    </div>
+    <div id="car" class="row justify-content-md-center">
       <input class="js-name" type="text" placeholder="Car name"/>
       <input class="js-price-by-day" type="number" placeholder="Price by day"/>
       <input class="js-price-by-km" type="number" placeholder="Price by km"/>
     </div>
-    <div id="rental">
-      <input class="js-name" type="text" placeholder="Driver name"/>
-      <input class="js-begin" type="date" placeholder="Rental begin date"/>
-      <input class="js-end" type="date" placeholder="Rental end date"/>
-      <input class="js-distance" type="number" placeholder="Distance in km"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+
+    <div id="rental2" class="row justify-content-md-center">
+      <div >
+        <p class="text-white" >Rental begin date :</p class>
+        <input class="js-begin" type="date" placeholder="Rental begin date"/>
+      </div>
+      <div >
+        <p class="text-white" >Rental end date :</p class>
+        <input class="js-end" type="date" placeholder="Rental end date"/>
+      </div>
     </div>
-    <button id="compute">Compute</button>
+
+    <div id="rental" class="row justify-content-md-center">
+      <input class="js-name" type="text" placeholder="Driver name"/>
+      <input class="js-distance" type="number" placeholder="Distance in km"/>
+    </div>
+
+    <div id="Deductible" class="row justify-content-md-center">
+      <input class="js-option" type="checkbox" placeholder="Deductible option"/><span style = "color:#ffffff;">Deductible option</span>
+      <p class="text-white"> The Deductible option : pay 4 euros for extra insurance</p class>
+    </div>
+    
+    <div id="button" class="row justify-content-md-center">
+      <button id="compute">Compute</button>
+    </div>
+
+    
     <div id="actors"></div>
     <script src="virtuo.js"></script>
     <script src="index.js"></script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
-</html>
+</html5>
